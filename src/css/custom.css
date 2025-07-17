@@ -1,0 +1,250 @@
+/**
+ * Logitech Developer Documentation - Official Color Scheme
+ * Based on https://www.logitech.com/en-hk/software/marketplace/developer.html
+ */
+
+/* Import Logitech-style fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Official Logitech Developer Color Variables */
+:root {
+  /* Primary colors matching official Logitech developer page */
+  --ifm-color-primary: #0051d5;
+  --ifm-color-primary-dark: #0047c1;
+  --ifm-color-primary-darker: #0043b6;
+  --ifm-color-primary-darkest: #003695;
+  --ifm-color-primary-light: #1a5ce9;
+  --ifm-color-primary-lighter: #2562ea;
+  --ifm-color-primary-lightest: #4078ed;
+  
+  /* Official Logitech page colors */
+  --logitech-blue: #0051d5;
+  --logitech-text-dark: #1a1a1a;
+  --logitech-text-gray: #666666;
+  --logitech-bg-white: #ffffff;
+  --logitech-bg-light-gray: #f8f9fa;
+  --logitech-border-light: #e5e7eb;
+  
+  /* Typography - matching official site */
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  /* Clean, minimal styling */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-navbar-height: 4rem;
+  --ifm-border-radius: 8px;
+  --ifm-button-border-radius: 6px;
+  
+  /* Background colors - clean and minimal like official site */
+  --ifm-background-color: var(--logitech-bg-white);
+  --ifm-background-surface-color: var(--logitech-bg-white);
+  
+  /* Text colors */
+  --ifm-font-color-base: var(--logitech-text-dark);
+  --ifm-font-color-secondary: var(--logitech-text-gray);
+  
+  /* Code highlighting */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 81, 213, 0.05);
+}
+
+/* Dark mode - keeping it minimal like the official site */
+[data-theme='dark'] {
+  --ifm-color-primary: #4078ed;
+  --ifm-color-primary-dark: #2562ea;
+  --ifm-color-primary-darker: #1a5ce9;
+  --ifm-color-primary-darkest: #0051d5;
+  --ifm-color-primary-light: #5b8aef;
+  --ifm-color-primary-lighter: #6d95f1;
+  --ifm-color-primary-lightest: #91b0f5;
+  
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #242424;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(64, 120, 237, 0.1);
+}
+
+/* Navbar - clean white background like official site */
+.navbar {
+  background: var(--logitech-bg-white);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--logitech-border-light);
+}
+
+.navbar__brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--logitech-text-dark) !important;
+}
+
+.navbar__item {
+  font-weight: 500;
+}
+
+.navbar__link {
+  color: var(--logitech-text-dark) !important;
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--logitech-blue) !important;
+}
+
+/* Hero Section - clean and minimal */
+.hero {
+  background: var(--logitech-bg-white);
+  color: var(--logitech-text-dark);
+  padding: 4rem 0;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--logitech-text-dark);
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--logitech-text-gray);
+}
+
+/* Button Styling - matching official Logitech style */
+.button {
+  border-radius: var(--ifm-button-border-radius);
+  font-weight: 600;
+  text-transform: none;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.button--primary {
+  background: var(--logitech-blue);
+  border-color: var(--logitech-blue);
+  color: white;
+}
+
+.button--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.button--outline {
+  background: transparent;
+  border-color: var(--logitech-blue);
+  color: var(--logitech-blue);
+}
+
+.button--outline:hover {
+  background: var(--logitech-blue);
+  border-color: var(--logitech-blue);
+  color: white;
+}
+
+/* Cards - clean white with subtle shadows */
+.card {
+  border-radius: var(--ifm-border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  background: var(--logitech-bg-white);
+  border: 1px solid var(--logitech-border-light);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card__header h3 {
+  color: var(--logitech-text-dark);
+  font-weight: 600;
+}
+
+.card__body p {
+  color: var(--logitech-text-gray);
+}
+
+/* Sidebar Styling */
+.menu__link {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  color: var(--logitech-text-dark);
+}
+
+.menu__link--active {
+  background: rgba(0, 81, 213, 0.08);
+  color: var(--logitech-blue);
+  font-weight: 600;
+}
+
+.menu__link:hover {
+  background: var(--logitech-bg-light-gray);
+  color: var(--logitech-blue);
+}
+
+/* Footer - clean and minimal */
+.footer {
+  background: var(--logitech-bg-light-gray);
+  color: var(--logitech-text-dark);
+  border-top: 1px solid var(--logitech-border-light);
+}
+
+.footer__title {
+  color: var(--logitech-text-dark);
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: var(--logitech-text-gray);
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--logitech-blue);
+}
+
+.footer__copyright {
+  color: var(--logitech-text-gray);
+}
+
+/* Code Blocks */
+.prism-code {
+  border-radius: var(--ifm-border-radius);
+}
+
+/* SDK Section Specific Styling - matching official page */
+.sdk-intro {
+  padding: 4rem 0;
+  background: var(--logitech-bg-light-gray);
+}
+
+.sdk-feature {
+  padding: 1.5rem;
+  border-left: 4px solid var(--logitech-blue);
+  margin: 1rem 0;
+  background: var(--logitech-bg-white);
+  border-radius: 0 var(--ifm-border-radius) var(--ifm-border-radius) 0;
+}
+
+/* Content sections */
+.container h2 {
+  color: var(--logitech-text-dark);
+  font-weight: 700;
+}
+
+.text--center {
+  color: var(--logitech-text-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+}

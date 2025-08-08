@@ -1,0 +1,8 @@
+{
+  "label": "LightSync SDK",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Control RGB lighting effects and synchronization across Logitech devices"
+  }
+} 

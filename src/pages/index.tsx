@@ -26,14 +26,14 @@ function SDKGrid() {
     {
       title: 'Logitech Actions SDK',
       description: 'Create custom actions and integrations for Logitech gaming peripherals.',
-      link: '/docs/actions-sdk/intro',
+      link: '/docs/actions-sdk/',
       className: 'actions-sdk',
       image: '/LogiDoc/img/mx-creative-console.gif'
     },
     {
       title: 'LightSync SDK',
       description: 'Control RGB lighting effects and synchronization across Logitech devices.',
-      link: '/docs/steering-wheel/intro',
+      link: '/docs/lightsync-sdk/intro',
       className: 'lightsync-sdk',
       image: '/LogiDoc/img/g-hub-article-lightsync-rgb-hero-desktop.webp'
     },

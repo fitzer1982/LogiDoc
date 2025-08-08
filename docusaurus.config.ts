@@ -44,6 +44,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Remove edit links for now
           editUrl: undefined,
+          // Configure sidebar routing
+          routeBasePath: 'docs',
         },
         blog: {
           showReadingTime: true,
@@ -74,7 +76,16 @@ const config: Config = {
         alt: 'Logitech Logo',
         src: 'img/logitech-logo.svg',
       },
-      items: [],
+      items: [
+        {
+          label: 'SDK 1.0',
+          to: '/LogiDoc/docs/actions-sdk/'
+        },
+        {
+          label: 'SDK 2.0',
+          to: '/LogiDoc/docs/sdk2/getting-started'
+        }
+      ],
     },
     footer: {
       style: 'dark',
@@ -85,6 +96,10 @@ const config: Config = {
             {
               label: 'Logitech Actions SDK',
               to: '/docs/actions-sdk/intro',
+            },
+            {
+              label: 'LightSync SDK',
+              to: '/docs/lightsync-sdk/intro',
             },
             {
               label: 'Steering Wheel SDK',

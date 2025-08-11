@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktemp_logi_docs=self.webpackChunktemp_logi_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/LogiDoc/blog","blogTitle":"Blog","authorsListPath":"/LogiDoc/blog/authors"}')}}]);

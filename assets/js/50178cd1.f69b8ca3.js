@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktemp_logi_docs=self.webpackChunktemp_logi_docs||[]).push([[2202],{5003:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/LogiDoc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -32,6 +32,16 @@ const sidebars: SidebarsConfig = {
     'actions-sdk/release-notes',
     'actions-sdk/faq',
     'actions-sdk/support',
+    {
+      type: 'category',
+      label: 'Plugin Development (Hidden)',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        'actions-sdk/plugin-development/marketplace-approval-guidelines'
+      ]
+    },
+    'actions-sdk/plugin-development/marketplace-approval-guidelines',
   ],
   sdk2Sidebar: [
     {

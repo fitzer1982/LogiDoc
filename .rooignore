@@ -1,0 +1,28 @@
+# Environment variables and configuration
+.env
+.env.*
+*.env
+config/secrets.json
+**/credentials.yaml
+# API keys and certificates
+*.key
+*.pem
+*.cert
+*.p12
+**/keys/*
+# Database files that might contain sensitive data
+*.db
+*.sqlite
+**/user_data.csv
+# Authentication and authorization
+**/auth.config.js
+**/oauth_tokens.json
+# Secrets directories
+secrets/*
+credentials/*
+private/*
+# Personal or sensitive data
+**/personal_data.csv
+**/users.json
+# The .rooignore file itself
+.rooignore

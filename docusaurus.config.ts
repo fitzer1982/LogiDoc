@@ -79,11 +79,13 @@ const config: Config = {
       items: [
         {
           label: 'SDK 1.0',
-          to: '/LogiDoc/docs/actions-sdk/'
+          to: '/LogiDoc/docs/actions-sdk/',
+          className: 'sdk-nav-item'
         },
         {
           label: 'SDK 2.0',
-          to: '/LogiDoc/docs/sdk2/getting-started'
+          to: '/LogiDoc/docs/sdk2/getting-started',
+          className: 'sdk-nav-item'
         }
       ],
     },

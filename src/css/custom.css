@@ -238,6 +238,17 @@
   color: var(--logitech-text-dark);
 }
 
+/* Conditional SDK Navigation */
+/* Hide SDK navigation by default */
+.sdk-nav-item {
+  display: none;
+}
+
+/* Show SDK navigation only on Actions SDK pages */
+body.actions-sdk-page .sdk-nav-item {
+  display: inline-flex;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero__title {

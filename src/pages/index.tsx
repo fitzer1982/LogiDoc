@@ -42,28 +42,28 @@ function SDKGrid() {
       description: 'Access advanced force feedback and haptic technology.',
       link: '/docs/gamepanel/intro',
       className: 'trueforce-sdk',
-      placeholder: '⚡ Force feedback animation'
+      video: '/LogiDoc/img/gaming-trueforce-hero-desktop.mp4'
     },
     {
       title: 'Haptics G',
       description: 'Implement haptic feedback and tactile responses in your applications.',
       link: '/docs/led-illumination/intro',
       className: 'haptics-sdk',
-      placeholder: '📳 Haptic pulse animation'
+      image: '/LogiDoc/img/cover-6.jpg'
     },
     {
       title: 'Video SDK',
       description: 'Integrate with Logitech webcams and video streaming devices.',
       link: '/docs/video-sdk/intro',
       className: 'video-sdk',
-      placeholder: '🎥 Video streaming animation'
+      image: '/LogiDoc/img/images.jpg'
     },
     {
-      title: 'Blue Voice SDK', 
+      title: 'Blue Voice SDK',
       description: 'Access professional voice processing and audio enhancement features.',
       link: '/docs/blue-voice-sdk/intro',
       className: 'blue-voice-sdk',
-      placeholder: '🎙️ Audio waveform animation'
+      image: '/LogiDoc/img/download.jpg'
     }
   ];
 
@@ -83,8 +83,8 @@ function SDKGrid() {
               <div className={clsx('card', sdk.className)}>
                 {sdk.image && (
                   <div className="card__image">
-                    <img 
-                      src={sdk.image} 
+                    <img
+                      src={sdk.image}
                       alt={sdk.title}
                       style={{
                         width: '100%',
@@ -95,21 +95,21 @@ function SDKGrid() {
                     />
                   </div>
                 )}
-                {sdk.placeholder && (
-                  <div className="card__placeholder" style={{
-                    height: '200px',
-                    backgroundColor: '#f5f5f5',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: '2px dashed #ccc',
-                    borderRadius: '8px 8px 0 0',
-                    fontSize: '14px',
-                    color: '#666',
-                    textAlign: 'center',
-                    padding: '1rem'
-                  }}>
-                    {sdk.placeholder}
+                {sdk.video && (
+                  <div className="card__image">
+                    <video
+                      src={sdk.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={{
+                        width: '100%',
+                        height: '200px',
+                        objectFit: 'cover',
+                        borderRadius: '8px 8px 0 0'
+                      }}
+                    />
                   </div>
                 )}
                 <div className="card__header">
